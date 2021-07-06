@@ -31,7 +31,7 @@ submit.addEventListener('click', function(){
         msgBox.textContent = "NAME FEILD EMPTY!!!";
     else if(userColor === undefined)
         msgBox.textContent = "PLAYER COLOR NOT SELECTED!!";
-    else if(player1Name.length > 10)
+    else if(userName.length > 10)
         msgBox.textContent = "Player Name TOOOO long";
     else{
         msgBox.textContent = "STARTING WAIT...";
