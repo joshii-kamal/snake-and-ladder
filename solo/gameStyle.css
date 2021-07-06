@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url('../image/bg1.png' );
+}
+
+/* player selection */
+
+.hidding{
+    display: none !important;
+}
+#selectPlayer{
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    padding: 40px;
+    box-sizing:border-box;
+    text-align: center;
+    opacity: .9;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+#selectPlayer h2{
+    background-color:black;
+    color: white ;
+    display: inline-block;
+    margin: 15px 0px;
+    width: 200px;
+    box-shadow: red 4px 3px 4px;
+}
+
+#selectPlayer #user{
+    width: 800px;
+    height: 550px;
+    margin-left: 250px;
+    margin-top: 40px;
+    border: 2px solid white;
+}
+
+#selectPlayer #user h2{
+    border: 2px solid white;
+}
+#selectPlayer #user div{
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 240px;
+    color: white;
+    border: 2px solid white;
+
+}
+
+#selectPlayer #user div input{
+    height: 30px;
+    text-align: center;
+}
+
+#selectPlayer #colorHead{
+    position: absolute;
+    margin-top: 13%;
+    left: 27%;
+}
+#selectPlayer #colorHead h2{
+    width: 600px;
+    border: 2px solid white;
+}
+
+
+#playerColors{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    display: flex;
+    
+}
+#playerColors #userColor button{
+    margin: 10px;
+    height: 80px;
+    cursor: pointer;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: x-large;
+}
+
+#playerColors .clrs{
+    display: grid;
+    grid-template-columns: 150px 150px;
+}
+
+#selectPlayer #submit{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: green 3px 3px 3px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 21px;
+}
+#selectPlayer #goBack{
+    position: absolute;
+    bottom: 10%;
+    left: 52%;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: green 3px 3px 3px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 21px;
+}
+#submit:hover, #goBack:hover{
+    background-color: black;
+    color: white;
+}
+
+/*  message box */
+.messageBox{
+    position: absolute;
+    background-color: black;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 800px;
+    top: 2%;
+    left: 15%;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding: 2px;
+    padding-bottom: 20px;
+    font-family: 'Kirang Haerang', cursive;
+}
+/* track */
+
+.track{
+    /* background-color:darkseagreen; */
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(10,100px);
+    grid-template-rows: repeat(10,auto);
+    margin-left: 100px;
+    margin-top: 80px;
+    box-shadow: red 5px 5px 13px;
+}
+
+.steps{
+    opacity: 0.7;
+    height: 50px;
+    width: 98px;
+    background-color: rgb(131, 128, 128);
+    margin: 1px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#compDice{
+    position: absolute;
+    right: 50px;
+    top: 13%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#computerDiceName, #userDiceName{
+    background-color: black;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    width: 200px;
+}
+/* dice */
+
+#dice{
+    position: absolute;
+    right: 50px;
+    bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#diceImage:hover{
+    cursor: pointer;
+    
+}
+
+#diceImage, #compDiceImg{
+    margin-left: 15px;
+    border-radius: 15px;
+}
+
+
+/* winner */
+
+.hide{
+    display: none;
+}
+#winner{
+    background-color: black;
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    opacity: .8;
+    box-shadow: yellow 5px 5px 13px;
+    /* transition-duration: 5000ms; */
+    color: white;
+}
+#winner div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset, #goBack button{
+    width: 150px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 13px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: cadetblue 4px 4px 4px;
+}
+#reset:hover, #goBack button:hover{
+    background-color: mediumturquoise;
+    box-shadow: lightgreen 4px 4px 4px;
+
+}
+#winnerTag{
+    color: whitesmoke;
+    font-family: 'Indie Flower', cursive;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+}
+#winnerName{
+    background-color: rgb(142, 226, 15);
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    padding:5px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    box-shadow: olive 5px 5px 5px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* snakes */
+
+.images{
+    position: absolute;
+}
+#snake-1{
+    right: 20%;
+    top: 9%;
+    transform: scalex(-1);
+}
+#snake-2{
+    left: 2px;
+    top: -20px;
+    transform: scalex(-1);
+}
+#snake-3{
+    right: 20%;
+    bottom: -20px;
+}
+#snake-4{
+    left: 25%;
+    top: 60%;
+}
+#snake-5{
+    transform: rotate(113deg) ;
+    left: 35%;
+    top: 25%;
+}
+
+#snake-6{
+    top: 16%;
+}
+#ladder-1{
+    right: 9px;
+    bottom: 9px;
+    transform: rotate(10deg);
+}
+#ladder-2{
+    bottom: 25%;
+    left: 25%;
+    transform: rotate(-33deg);
+}
+#ladder-3{
+    left: 43%;
+    bottom: -40px;
+    transform: rotate(33deg);
+}
+#ladder-4{
+    left: 40%;
+    transform: rotate(15deg);
+}

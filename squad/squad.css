@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&family=Gloria+Hallelujah&display=swap');
+*{
+    margin: 0px;
+    padding:0px;
+    background-color: black;
+}
+#heading{
+    font-family: 'Gloria Hallelujah', cursive;
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 19px;
+    top: 30%;
+    left: 35%;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: teal -5px 8px 1px;
+    padding: 5px;
+}
+#heading:hover{
+    box-shadow: seagreen -5px 8px 1px;
+}
+
+a button{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: large;
+}
+
+a button:hover{
+    box-shadow: red 6px 6px 4px;
+}

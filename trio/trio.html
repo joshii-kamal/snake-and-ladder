@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trio</title>
+    <link rel="stylesheet" href="./trio.css">
+</head>
+
+<body>
+    <div id="selectPlayer">
+        <div id="player1">
+            <h2>Player-1</h2>
+            <br>
+            <div>
+                <label for="player1Name">Enter your name:</label>
+                <input type="text" name="player1Name" id="p1Name">
+            </div>
+        </div>
+        <div id="player2">
+            <h2>Player-2</h2>
+            <br>
+            <div>
+                <label for="player2Name">Enter your name:</label>
+                <input type="text" name="player2Name" id="p2Name">
+            </div>
+        </div>
+        <div id="player3">
+            <h2>Player-3</h2>
+            <br>
+            <div>
+                <label for="player3Name">Enter your name:</label>
+                <input type="text" name="player3Name" id="p3Name">
+            </div>
+        </div>
+        <div id="colorHead">
+            <h2 id="colorMessage">SELECT YOUR PLAYER COLOR</h2>
+        </div>
+        <div id="playerColors">
+            <div id="player1Color" class="clrs">
+                <button id="player1Red" style="background-color: red;">RED</button>
+                <button id="player1Green" style="background-color: rgb(17, 228, 17);">GREEN</button>
+                <button id="player1Blue" style="background-color: blue;">BLUE</button>
+                <button id="player1Yellow" style="background-color: yellow;">YELLOW</button>
+            </div>
+            <div id="gap"></div>
+            <div id="player2Color" class="clrs">
+                <button id="player2Red" style="background-color: red;">RED</button>
+                <button id="player2Green" style="background-color: rgb(17, 228, 17);">GREEN</button>
+                <button id="player2Blue" style="background-color: blue;">BLUE</button>
+                <button id="player2Yellow" style="background-color: yellow;">YELLOW</button>
+            </div>
+            <div id="gap"></div>
+            <div id="player3Color" class="clrs">
+                <button id="player3Red" style="background-color: red;">RED</button>
+                <button id="player3Green" style="background-color: rgb(17, 228, 17);">GREEN</button>
+                <button id="player3Blue" style="background-color: blue;">BLUE</button>
+                <button id="player3Yellow" style="background-color: yellow;">YELLOW</button>
+            </div>
+        </div>
+        <button id="submit">Let's play</button>
+        <a href="/index.html">
+            <button id="goBack">GO Back</button>
+        </a>
+    </div>
+    <p class="messageBox"></p>
+
+    <div class="track">
+        <div class="steps" id="100">100</div>
+        <div class="steps" id="99">99</div>
+        <div class="steps" id="98">98</div>
+        <div class="steps" id="97">97</div>
+        <div class="steps" id="96">96</div>
+        <div class="steps" id="95">95</div>
+        <div class="steps" id="94">94</div>
+        <div class="steps" id="93">93</div>
+        <div class="steps" id="92">92</div>
+        <div class="steps" id="91">91</div>
+        <div class="steps" id="81">81</div>
+        <div class="steps" id="82">82</div>
+        <div class="steps" id="83">83</div>
+        <div class="steps" id="84">84</div>
+        <div class="steps" id="85">85</div>
+        <div class="steps" id="86">86</div>
+        <div class="steps" id="87">87</div>
+        <div class="steps" id="88">88</div>
+        <div class="steps" id="89">89</div>
+        <div class="steps" id="90">90</div>
+        <div class="steps" id="80">80</div>
+        <div class="steps" id="79">79</div>
+        <div class="steps" id="78">78</div>
+        <div class="steps" id="77">77</div>
+        <div class="steps" id="76">76</div>
+        <div class="steps" id="75">75</div>
+        <div class="steps" id="74">74</div>
+        <div class="steps" id="73">73</div>
+        <div class="steps" id="72">72</div>
+        <div class="steps" id="71">71</div>
+        <div class="steps" id="61">61</div>
+        <div class="steps" id="62">62</div>
+        <div class="steps" id="63">63</div>
+        <div class="steps" id="64">64</div>
+        <div class="steps" id="65">65</div>
+        <div class="steps" id="66">66</div>
+        <div class="steps" id="67">67</div>
+        <div class="steps" id="68">68</div>
+        <div class="steps" id="69">69</div>
+        <div class="steps" id="70">70</div>
+        <div class="steps" id="60">60</div>
+        <div class="steps" id="59">59</div>
+        <div class="steps" id="58">58</div>
+        <div class="steps" id="57">57</div>
+        <div class="steps" id="56">56</div>
+        <div class="steps" id="55">55</div>
+        <div class="steps" id="54">54</div>
+        <div class="steps" id="53">53</div>
+        <div class="steps" id="52">52</div>
+        <div class="steps" id="51">51</div>
+        <div class="steps" id="41">41</div>
+        <div class="steps" id="42">42</div>
+        <div class="steps" id="43">43</div>
+        <div class="steps" id="44">44</div>
+        <div class="steps" id="45">45</div>
+        <div class="steps" id="46">46</div>
+        <div class="steps" id="47">47</div>
+        <div class="steps" id="48">48</div>
+        <div class="steps" id="49">49</div>
+        <div class="steps" id="50">50</div>
+        <div class="steps" id="40">40</div>
+        <div class="steps" id="39">39</div>
+        <div class="steps" id="38">38</div>
+        <div class="steps" id="37">37</div>
+        <div class="steps" id="36">36</div>
+        <div class="steps" id="35">35</div>
+        <div class="steps" id="34">34</div>
+        <div class="steps" id="33">33</div>
+        <div class="steps" id="32">32</div>
+        <div class="steps" id="31">31</div>
+        <div class="steps" id="21">21</div>
+        <div class="steps" id="22">22</div>
+        <div class="steps" id="23">23</div>
+        <div class="steps" id="24">24</div>
+        <div class="steps" id="25">25</div>
+        <div class="steps" id="26">26</div>
+        <div class="steps" id="27">27</div>
+        <div class="steps" id="28">28</div>
+        <div class="steps" id="29">29</div>
+        <div class="steps" id="30">30</div>
+        <div class="steps" id="20">20</div>
+        <div class="steps" id="19">19</div>
+        <div class="steps" id="18">18</div>
+        <div class="steps" id="17">17</div>
+        <div class="steps" id="16">16</div>
+        <div class="steps" id="15">15</div>
+        <div class="steps" id="14">14</div>
+        <div class="steps" id="13">13</div>
+        <div class="steps" id="12">12</div>
+        <div class="steps" id="11">11</div>
+        <div class="steps" id="1">1</div>
+        <div class="steps" id="2">2</div>
+        <div class="steps" id="3">3</div>
+        <div class="steps" id="4">4</div>
+        <div class="steps" id="5">5</div>
+        <div class="steps" id="6">6</div>
+        <div class="steps" id="7">7</div>
+        <div class="steps" id="8">8</div>
+        <div class="steps" id="9">9</div>
+        <div class="steps" id="10">10</div>
+        <img src="/image/snakes/snake-1.png" alt="Loading..." id="snake-1" class="images" height="200px" width="200px">
+        <img src="/image/snakes/snake-2.png" alt="Loading..." id="snake-2" class="images" height="480px" width="320px">
+        <img src="/image/snakes/snake-3.png" alt="Loading..." id="snake-3" class="images" height="200px" width="200px">
+        <img src="/image/snakes/snake-4.png" alt="Loading..." id="snake-4" class="images" height="130px" width="150px">
+        <img src="/image/snakes/snake-5.png" alt="Loading..." id="snake-5" class="images" height="250px" width="200px">
+        <img src="/image/snakes/snake-3.png" alt="Loading..." id="snake-6" class="images" height="200px" width="200px">
+        <img src="/image/ladder/ladder-1.png" alt="Loading..." id="ladder-1" class="images" height="250px"
+            width="200px">
+        <img src="/image/ladder/ladder-2.png" alt="Loading..." id="ladder-2" class="images" height="250px"
+            width="200px">
+        <img src="/image/ladder/ladder-3.png" alt="Loading..." id="ladder-3" class="images" height="450px"
+            width="150px">
+        <img src="/image/ladder/ladder-1.png" alt="Loading..." id="ladder-4" class="images" height="150px"
+            width="200px">
+    </div>
+
+    <div id="player2Dice">
+        <h3 id="player2DiceName">Player-2</h3>
+        <img id="player2DiceImg" src="/image/dice-1.png" alt="Loading" height="90px" width="90px" onclick="player2()">
+    </div>
+
+    <div id="player1Dice">
+        <h3 id="player1DiceName">Player-1</h3>
+        <img id="player1DiceImg" src="/image/dice-1.png" alt="Loading" height="90px" width="90px" onclick="player1()">
+    </div>
+    <div id="player3Dice">
+        <h3 id="player3DiceName">Player-3</h3>
+        <img id="player3DiceImg" src="/image/dice-1.png" alt="Loading" height="90px" width="90px" onclick="player3()">
+    </div>
+    <div id="winner" class="hide">
+        <div>
+            <p id="winnerTag">WINNER</p>
+            <h2 id="winnerName">......</h2>
+            <a href="./trio.html">
+                <button id="reset">Reset</button>
+            </a>
+            <a href="/index.html">
+                <button id="reset">GO Back</button>
+            </a>
+        </div>
+    </div>
+
+    </div>
+    <script src="./trio.js"></script>
+</body>
+
+</html>
